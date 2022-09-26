@@ -11,6 +11,7 @@
     },
     ".eslintrc.json": "*"
   },
+  "packageManager": "yarn",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
