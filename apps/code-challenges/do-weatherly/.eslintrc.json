@@ -1,0 +1,63 @@
+{
+  "extends": ["plugin:@nrwl/nx/react", "../../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*", ".expo", "node_modules", "web-build"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": "off"
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "quotes": "off",
+        "arrow-body-style": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "prefer-arrow-callback": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "react-native/no-unused-styles": "warn",
+        "comma-dangle": "off",
+        "sort-imports": [
+          "error",
+          {
+            "ignoreCase": true,
+            "ignoreDeclarationSort": true
+          }
+        ],
+        "import/no-default-export": "off",
+        "import/order": [
+          1,
+          {
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              ["parent", "sibling", "index"]
+            ],
+            "newlines-between": "always"
+          }
+        ],
+        "react-native/no-inline-styles": "off",
+        "react-native/no-raw-text": "off",
+        "react-native/no-color-literals": "off",
+        "react-native/sort-styles": [
+          "error",
+          "asc",
+          { "ignoreClassNames": true, "ignoreStyleProperties": false }
+        ],
+        "prettier/prettier": [
+          "error",
+          {
+            "endOfLine": "auto",
+            "trailingComma": "none"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

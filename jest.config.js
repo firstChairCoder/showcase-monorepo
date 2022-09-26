@@ -2,5 +2,6 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  roots: ['<rootDir>/src/']
+  roots: ['<rootDir>/src/'],
+  projects: '<rootDir>/apps/code-challenges/do-weatherly',
 };

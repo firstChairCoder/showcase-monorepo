@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "do-weatherly": "apps/code-challenges/do-weatherly",
+    "do-weatherly-e2e": "apps/code-challenges/do-weatherly-e2e"
+  }
 }
